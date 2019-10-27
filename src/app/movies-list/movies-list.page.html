@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Hollywood Movies List Year-wise</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let item of movies">
+    <ion-item (click)="changeUrl(item)">
+      <ion-card-content>
+        <ion-label>{{ item?.name }} | {{ item?.year}}
+        </ion-label>
+      </ion-card-content>
+    </ion-item>
+  </ion-card>
+</ion-content>

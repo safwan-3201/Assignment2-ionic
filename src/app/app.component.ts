@@ -20,6 +20,16 @@ export class AppComponent {
       title: 'List',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'Movie List',
+      url: '/movies-list',
+      icon: 'list'
+    },
+    {
+      title: 'Add New Movie',
+      url: '/add-new',
+      icon: 'play-circle'
     }
   ];
 

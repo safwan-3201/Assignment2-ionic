@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add-New</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid class="ion-padding-top">
+        <ion-text>Add Highest Grossing Bollywood Film</ion-text>
+        <div [formGroup]="addForm">
+            <ion-item>
+              <ion-label position="floating">Movie Year</ion-label>
+              <ion-input formControlName="year"></ion-input>
+            </ion-item>
+            <ion-item>
+      
+              <ion-label position="floating">Movie Name</ion-label>
+              <ion-input formControlName="name"></ion-input>
+            </ion-item>
+
+            <ion-grid class="ion-padding-top">
+                <ion-row class="ion-justify-content-center">
+                  <ion-button shape="round" [disabled]="!addForm.valid" (click)="addNewMovie()">Save</ion-button>
+                </ion-row>
+              </ion-grid>
+              </div>
+        </ion-grid>
+        
+</ion-content>

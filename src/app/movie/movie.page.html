@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="movies-list"></ion-back-button>
+
+    </ion-buttons>
+    <ion-title> Movie </ion-title>
+    <!-- (click)="deleteStudent()" -->
+    <ion-button slot="end" (click)="deleteMovie()">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--<app-profile-detail></app-profile-detail>--->
+  <ion-card>
+    <img src="https://library.kissclipart.com/20180829/qhe/kissclipart-movie-icon-clipart-computer-icons-film-clip-art-3937db1254b3b7d3.jpg" height="250px" />
+    <ion-card-header>
+      <ion-card-title>{{singleMovie?.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{singleMovie?.year}}
+
+
+    </ion-card-content>
+
+
+  </ion-card>
+</ion-content>
